@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+    <h1>我的第一段JavaScript</h1>
+    <p>請輸入數字。如果輸入值不是數字，瀏覽器會彈出提示框</p>
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">點擊這裡</button>
+
+<script>
+    function myFunction(){
+        var x = document.getElementById("demo").value;
+        if(x == "" || isNaN(x)){   //isNaN()函式會判斷某個數值是不是NaN
+            alert("不是數字")
+        }
+    }
+</script>
+</body>
+</html>
